@@ -2,6 +2,14 @@
 
 This repository hosts a static online resume using GitHub Pages.
 
+## Content source
+
+Current resume content was aligned from:
+
+- `C:\Users\jluis\Documents\S&PE-Java.CL9.jose.luis.o.domingo.pptx`
+
+Use `ppt-extracted.txt` as a temporary mapping artifact when refreshing content from slides.
+
 ## Files
 
 - `index.html`: Main resume page
@@ -9,6 +17,7 @@ This repository hosts a static online resume using GitHub Pages.
 - `404.html`: Fallback page for unknown routes
 - `.nojekyll`: Disables Jekyll processing in GitHub Pages
 - `scripts/validate.ps1`: Local validation script
+- `ppt-extracted.txt`: Extracted slide text used to map resume content
 
 ## Quick local check
 

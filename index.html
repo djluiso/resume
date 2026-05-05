@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Luis – Resume</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f6f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    a { color: #0066cc; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* ── Layout ── */
+    .page {
+      max-width: 860px;
+      margin: 40px auto;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 16px rgba(0,0,0,.10);
+      overflow: hidden;
+    }
+
+    /* ── Header / Hero ── */
+    header {
+      background: #1a2e4a;
+      color: #fff;
+      padding: 40px 48px 36px;
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+      letter-spacing: .5px;
+      margin-bottom: 4px;
+    }
+
+    header .title {
+      font-size: 1.05rem;
+      color: #a8c4e0;
+      margin-bottom: 16px;
+    }
+
+    .contact-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      font-size: .9rem;
+      color: #c9d9ea;
+    }
+
+    .contact-bar a { color: #7ab8f5; }
+
+    /* ── Two-column body ── */
+    .body {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+    }
+
+    /* ── Sidebar ── */
+    .sidebar {
+      background: #eef2f7;
+      padding: 32px 24px;
+    }
+
+    /* ── Main content ── */
+    .main {
+      padding: 32px 40px;
+    }
+
+    /* ── Section ── */
+    section { margin-bottom: 28px; }
+
+    section:last-child { margin-bottom: 0; }
+
+    h2 {
+      font-size: .75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: #1a2e4a;
+      border-bottom: 2px solid #1a2e4a;
+      padding-bottom: 4px;
+      margin-bottom: 14px;
+    }
+
+    /* Skills */
+    .skill-group { margin-bottom: 10px; }
+    .skill-group h3 { font-size: .85rem; font-weight: 600; margin-bottom: 4px; }
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .tag {
+      background: #1a2e4a;
+      color: #fff;
+      font-size: .75rem;
+      padding: 3px 9px;
+      border-radius: 12px;
+    }
+
+    /* Languages */
+    .lang-item {
+      display: flex;
+      justify-content: space-between;
+      font-size: .88rem;
+      margin-bottom: 6px;
+    }
+    .lang-level { color: #666; font-style: italic; }
+
+    /* Education / Certs */
+    .edu-item { margin-bottom: 12px; }
+    .edu-item h3 { font-size: .92rem; font-weight: 600; }
+    .edu-item .institution { font-size: .85rem; color: #555; }
+    .edu-item .year { font-size: .8rem; color: #888; }
+
+    /* Experience */
+    .job { margin-bottom: 20px; }
+    .job-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 4px;
+      margin-bottom: 2px;
+    }
+    .job-header h3 { font-size: 1rem; font-weight: 600; }
+    .job-header .period { font-size: .82rem; color: #888; white-space: nowrap; }
+    .job .company { font-size: .88rem; color: #0066cc; margin-bottom: 6px; }
+    .job ul { padding-left: 18px; font-size: .9rem; }
+    .job ul li { margin-bottom: 4px; }
+
+    /* Projects */
+    .project { margin-bottom: 16px; }
+    .project h3 { font-size: .95rem; font-weight: 600; }
+    .project p { font-size: .88rem; color: #555; margin-top: 2px; }
+
+    /* Responsive */
+    @media (max-width: 640px) {
+      header { padding: 28px 24px; }
+      .body { grid-template-columns: 1fr; }
+      .main { padding: 24px; }
+      .sidebar { padding: 24px; }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <!-- ══ HEADER ══ -->
+  <header>
+    <h1>Luis Díaz</h1>
+    <p class="title">Software Developer</p>
+    <div class="contact-bar">
+      <span>📧 <a href="mailto:djluiso@example.com">djluiso@example.com</a></span>
+      <span>🔗 <a href="https://github.com/djluiso" target="_blank">github.com/djluiso</a></span>
+      <span>📍 Location</span>
+    </div>
+  </header>
+
+  <div class="body">
+
+    <!-- ══ SIDEBAR ══ -->
+    <aside class="sidebar">
+
+      <section>
+        <h2>Skills</h2>
+
+        <div class="skill-group">
+          <h3>Languages</h3>
+          <div class="tags">
+            <span class="tag">JavaScript</span>
+            <span class="tag">TypeScript</span>
+            <span class="tag">Python</span>
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+          </div>
+        </div>
+
+        <div class="skill-group" style="margin-top:12px;">
+          <h3>Frameworks &amp; Tools</h3>
+          <div class="tags">
+            <span class="tag">React</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">Git</span>
+            <span class="tag">Docker</span>
+            <span class="tag">REST APIs</span>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Education</h2>
+
+        <div class="edu-item">
+          <h3>B.Sc. Computer Science</h3>
+          <div class="institution">University Name</div>
+          <div class="year">2015 – 2019</div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Languages</h2>
+        <div class="lang-item"><span>Spanish</span><span class="lang-level">Native</span></div>
+        <div class="lang-item"><span>English</span><span class="lang-level">Professional</span></div>
+      </section>
+
+      <section>
+        <h2>Interests</h2>
+        <p style="font-size:.88rem; color:#555;">Open source, automation, continuous learning, and building useful tools.</p>
+      </section>
+
+    </aside>
+
+    <!-- ══ MAIN ══ -->
+    <main class="main">
+
+      <section>
+        <h2>Summary</h2>
+        <p style="font-size:.92rem;">
+          Passionate software developer with experience building scalable web applications and APIs.
+          Strong focus on clean code, developer experience, and continuous improvement.
+          Comfortable working across the full stack and collaborating in agile teams.
+        </p>
+      </section>
+
+      <section>
+        <h2>Experience</h2>
+
+        <div class="job">
+          <div class="job-header">
+            <h3>Software Developer</h3>
+            <span class="period">Jan 2022 – Present</span>
+          </div>
+          <div class="company">Company Name · Full-time</div>
+          <ul>
+            <li>Designed and implemented RESTful APIs consumed by web and mobile clients.</li>
+            <li>Improved CI/CD pipelines, reducing deployment time by 40%.</li>
+            <li>Mentored junior developers and conducted code reviews.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job-header">
+            <h3>Junior Web Developer</h3>
+            <span class="period">Jun 2019 – Dec 2021</span>
+          </div>
+          <div class="company">Previous Company · Full-time</div>
+          <ul>
+            <li>Built responsive UIs with React and integrated third-party services.</li>
+            <li>Maintained and extended a legacy Node.js backend.</li>
+            <li>Participated in sprint planning and daily standups.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2>Projects</h2>
+
+        <div class="project">
+          <h3><a href="https://github.com/djluiso/resume" target="_blank">Resume</a></h3>
+          <p>Personal résumé hosted on GitHub Pages — the page you are viewing now.</p>
+        </div>
+
+        <div class="project">
+          <h3>Project Two</h3>
+          <p>Brief description of another notable personal or open-source project.</p>
+        </div>
+      </section>
+
+    </main>
+  </div><!-- .body -->
+
+</div><!-- .page -->
+</body>
+</html>

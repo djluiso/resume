@@ -3,162 +3,363 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Online resume for Jose Luis" />
-  <title>Jose Luis | Resume</title>
+  <meta name="description" content="Jose Luis Domingo — Senior Java Engineer and Team Lead at Accenture. 15 years building Java / Spring Boot systems for global banking, telco and tech clients. Co-inventor on an AI patent application (US &amp; PH)." />
+  <meta name="theme-color" content="#0b0d12" media="(prefers-color-scheme: dark)" />
+  <meta name="theme-color" content="#f7f6f2" media="(prefers-color-scheme: light)" />
+  <meta property="og:title" content="Jose Luis Domingo | Resume" />
+  <meta property="og:description" content="Senior Java Engineer · Java · Spring Boot · Spring AI · Azure / AWS / GCP · AI patent co-inventor" />
+  <meta property="og:type" content="profile" />
+  <title>Jose Luis Domingo | Resume</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('theme');
+        if (t) document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {}
+    })();
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#content">Skip to content</a>
-  <main class="container" id="content">
-    <header class="hero" aria-label="Profile">
-      <div class="hero-copy">
-        <p class="kicker">Online Resume</p>
+
+  <div class="toolbar" role="toolbar" aria-label="Page actions">
+    <button class="tool-btn" id="theme-toggle" type="button" aria-label="Toggle dark mode">
+      <svg class="icon icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      <svg class="icon icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+    </button>
+    <button class="tool-btn" id="print-btn" type="button" aria-label="Print or save as PDF">
+      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9V2h12v7M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+      <span>PDF</span>
+    </button>
+  </div>
+
+  <main class="page" id="content">
+    <header class="hero">
+      <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span>Open to relocation · EU, Canada, Australia &amp; NZ · Philippine citizen, work visa needed · 30-day notice</p>
+      <div class="hero-name">
         <h1>Jose Luis Domingo</h1>
-        <p class="headline">Software Developer Team Lead</p>
-        <p class="meta">Accenture Advanced Technology Centers in the Philippines</p>
-        <p class="meta">Cybergate Tower 2, Mandaluyong City, Philippines</p>
-        <p class="contact">
-          Work: <a href="mailto:jose.luis.o.domingo@accenture.com">jose.luis.o.domingo@accenture.com</a>
-          Personal: <a href="mailto:me@djluiso.com">me@djluiso.com</a>
-        </p>
+        <p class="role">Senior Java Engineer · Team Lead</p>
       </div>
-      <div class="hero-visual" aria-hidden="true">
-        <div class="ring ring-a"></div>
-        <div class="ring ring-b"></div>
-        <div class="ring ring-c"></div>
-      </div>
+      <p class="tagline">
+        I build dependable Java platforms for banks, telcos and energy companies, and connect them to AI.
+      </p>
+      <ul class="contact" aria-label="Contact">
+        <li>
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16v16H4z"/><path d="m4 6 8 7 8-7"/></svg>
+          <a href="mailto:me@djluiso.com">me@djluiso.com</a>
+        </li>
+        <li>
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+          <a href="https://www.linkedin.com/in/djluiso/">linkedin.com/in/djluiso</a>
+        </li>
+        <li>
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.9a3.4 3.4 0 0 0-.9-2.6c3.1-.3 6.4-1.5 6.4-7A5.4 5.4 0 0 0 20 4.8 5 5 0 0 0 19.9 1S18.7.6 16 2.5a13.4 13.4 0 0 0-7 0C6.3.6 5.1 1 5.1 1A5 5 0 0 0 5 4.8a5.4 5.4 0 0 0-1.5 3.7c0 5.4 3.3 6.6 6.4 7A3.4 3.4 0 0 0 9 18v4"/></svg>
+          <a href="https://github.com/djluiso">github.com/djluiso</a>
+        </li>
+        <li>
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>
+          <span>Manila, Philippines</span>
+        </li>
+      </ul>
+      <p class="relocation">Open to relocation: EU, Canada, Australia &amp; NZ · Philippine citizen, work visa needed · 30-day notice</p>
     </header>
 
     <section class="stats" aria-label="Highlights">
-      <article class="stat-card">
-        <p class="stat-number">14+</p>
-        <p class="stat-label">Years in software engineering</p>
-      </article>
-      <article class="stat-card">
-        <p class="stat-number">5</p>
-        <p class="stat-label">Major platform projects delivered</p>
-      </article>
-      <article class="stat-card">
-        <p class="stat-number">3</p>
-        <p class="stat-label">Cloud ecosystems used in production</p>
-      </article>
+      <div class="stat"><span class="stat-num">15</span><span class="stat-label">years at Accenture</span></div>
+      <div class="stat"><span class="stat-num">1</span><span class="stat-label">AI patent application (US &amp; PH)</span></div>
+      <div class="stat"><span class="stat-num">6 yrs</span><span class="stat-label">at client UBS, 2 on-site in Zürich</span></div>
+      <div class="stat"><span class="stat-num">20+</span><span class="stat-label">Spring Boot microservices at UBS</span></div>
     </section>
 
-    <section>
-      <h2>Summary</h2>
-      <p>
-        Software engineer with professional experience since 2011, focused on enterprise application development
-        across communications, media, digital technology, energy, and financial services. Specializes in Java
-        Spring Boot with hands-on delivery across backend APIs, UI development, data streaming, and cloud migration.
-      </p>
-      <p>
-        Recognized internally for innovation, including patent-pending work and Ideas2Outcome and Gantimpala awards.
-      </p>
-    </section>
+    <div class="layout">
+      <div class="main-col">
+        <section id="s-summary" aria-labelledby="h-about">
+          <h2 id="h-about"><span class="num">01</span>Summary</h2>
+          <p>
+            Senior Java engineer and team lead with 15 years at Accenture, delivering production platforms for banking,
+            telecom and energy clients; has led teams of 3–20 engineers. Spent six years as an Accenture consultant embedded
+            in a mostly Swiss UBS Global Wealth Management team (on-site in Zürich, 2020–2022, then remote on CET hours).
+            Now building backend services for Google's Android partner build-approval program, also via Accenture.
+          </p>
+          <p>
+            Co-inventor on an AI patent application (US &amp; PH), Accenture Inventor of the Year (Philippines, 2019),
+            three-time innovation-competition winner or finalist, and lead on MCP pilots for legacy systems.
+          </p>
+        </section>
 
-    <section>
-      <h2>Skills</h2>
-      <div class="chip-group" aria-label="Technical skills">
-        <span class="chip">Java Spring</span>
-        <span class="chip">JavaScript</span>
-        <span class="chip">REST API</span>
-        <span class="chip">SOAP API</span>
-        <span class="chip">Kafka Streams</span>
-        <span class="chip">Data ETL</span>
-        <span class="chip">AWS</span>
-        <span class="chip">Azure Cloud</span>
-        <span class="chip">Google Cloud Platform</span>
-        <span class="chip">Firebase</span>
-        <span class="chip">Oracle</span>
-        <span class="chip">MySQL</span>
-        <span class="chip">PostgreSQL</span>
-        <span class="chip">GitLab CI</span>
-        <span class="chip">Maven</span>
-        <span class="chip">Jira</span>
+        <section id="s-experience" aria-labelledby="h-exp">
+          <h2 id="h-exp"><span class="num">02</span>Experience</h2>
+
+          <div class="company">
+            <div class="company-head">
+              <h3>Accenture</h3>
+              <span class="mono muted">Nov 2011 – Present · Manila, Philippines</span>
+            </div>
+
+            <ol class="roles">
+              <li class="role-item">
+                <div class="role-head">
+                  <h4>Lead Application Developer</h4>
+                  <span class="dates">Sep 2019 – Present</span>
+                </div>
+                <ul>
+                  <li>Led AI-integration pilots: MCP PoCs over legacy REST APIs and user-data CRUD, scoped to user access roles.</li>
+                  <li>Feb 2026 – Aug 2026: completed Accenture's AI learning program; studied AOSP for the Google engagement.</li>
+                </ul>
+
+                <div class="project">
+                  <p class="project-name">Client: Google · Android OS Platform <span class="dates-inline">Aug 2026 – Present</span></p>
+                  <ul>
+                    <li>Develop a Java backend that Google's partners building custom Android OS use to get their builds approved.</li>
+                  </ul>
+                </div>
+
+                <div class="project">
+                  <p class="project-name">Client: UBS, Zürich · AI, Analytics &amp; Sales Platform <span class="dates-inline">Apr 2025 – Feb 2026</span></p>
+                  <ul>
+                    <li>Built a new data product and platform for the bank's AI, Analytics, Sales &amp; Marketing department.</li>
+                    <li>Java (Spring) and Python on Azure: Functions, Databricks, storage, networking and Managed Identities.</li>
+                    <li>Helped migrate the platform from on-prem to Azure, including ETL to Azure Data Lake.</li>
+                  </ul>
+                </div>
+
+                <div class="project">
+                  <p class="project-name">Client: UBS, Zürich · Sales &amp; Marketing Apps <span class="dates-inline">Feb 2020 – Feb 2026</span></p>
+                  <ul>
+                    <li>On-site in Zürich (Feb 2020 – Feb 2022), then remote on CET hours, in a 10–15-person, mostly Swiss team.</li>
+                    <li>Worked across all 20+ Spring Boot microservices and front ends (100+ DB schemas) with shared ownership.</li>
+                    <li>Built Client Book features for client advisors, and Flag Manager UI / REST APIs with third-party integrations.</li>
+                    <li>Designed real-time, near-real-time and transactional Kafka pipelines linking millions of records across regions.</li>
+                    <li>Upgraded apps through Java 8, 11, 17 and 21 ahead of end-of-life; automated tests with JUnit and Cucumber.</li>
+                  </ul>
+                </div>
+
+                <div class="project minor">
+                  <p class="project-name">Internal innovation (contest finalist): SanDugo · Blood-Donor Finder App <span class="dates-inline">Oct 2019 – Dec 2020</span></p>
+                  <ul>
+                    <li>Solution Architect and Lead Back-end Developer; shaped the overall design across backend, infra and front end.</li>
+                    <li>Set up development and production on GCP: Compute Engine, Firebase Authentication and Firestore.</li>
+                    <li>Designed Spring Boot REST APIs, secured with Firebase Auth, for the Node.js / Ionic app.</li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="role-item">
+                <div class="role-head">
+                  <h4>Business &amp; Integration Architect Team Lead</h4>
+                  <span class="dates">Nov 2017 – Sep 2019</span>
+                </div>
+                <ul>
+                  <li>Led teams of 3–20 engineers across client and internal projects.</li>
+                </ul>
+
+                <div class="project">
+                  <p class="project-name">Client: Electric Ireland · Connected Platform (CPaaS) <span class="dates-inline">Jul 2017 – Sep 2019</span></p>
+                  <ul>
+                    <li>Led the CPaaS platform: JBoss Fuse, Java / Camel, WSO2 IS &amp; API Manager, MySQL, PHP.</li>
+                    <li>Maintained an internal Java web app for platform monitoring and team management.</li>
+                    <li>Delivered change requests, bug fixes and deployments; owned ticket analysis and L3 support.</li>
+                    <li>Administered and automated AWS (EC2, S3, RDS, DynamoDB, Lambda, IoT) via AWS SDK; built Alexa linking.</li>
+                    <li>Applied Azure ML, automated load tests with JMeter and Node.js, and built an analysis tool for support.</li>
+                  </ul>
+                </div>
+
+                <div class="project minor">
+                  <p class="project-name">Corporate citizenship: E-HealthWorker · with Save the Children <span class="dates-inline">May 2019 – Oct 2019</span></p>
+                  <ul>
+                    <li>Full-stack developer on a mobile app that helps volunteers collect child-nutrition data to fight malnutrition.</li>
+                    <li>Built a Spring MVC dashboard to consolidate, analyze, map and graph municipal data (Firebase, WSO2 OAuth2).</li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="role-item">
+                <div class="role-head">
+                  <h4>Business &amp; Technology Delivery Senior Analyst</h4>
+                  <span class="dates">Sep 2014 – Nov 2017</span>
+                </div>
+                <ul>
+                  <li>Innovation and automation specialist, building award-winning AI prototypes behind the patent application.</li>
+                </ul>
+
+                <div class="project">
+                  <p class="project-name">Clients: Coop Voce (Italy) · Fiat <span class="dates-inline">May 2015 – Jul 2017</span></p>
+                  <ul>
+                    <li>Coop Voce (May 2015 – Jul 2017): Oracle BRM L2 support, incident management and daily operations.</li>
+                    <li>Built a reusable Java web app that monitors operations, auto-creates tickets, auto-fixes, triages and reports.</li>
+                    <li>Alerts support via SMS / voice (Infobip, Globe Labs); reused across other Accenture projects.</li>
+                    <li>Won Ideas2Outcome 2017 and was submitted as the AI patent application (US &amp; PH).</li>
+                    <li>Fiat (May 2017 – Jun 2017): jQuery / AJAX front end for a Spring MVC web app.</li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="role-item">
+                <div class="role-head">
+                  <h4>Software Engineer</h4>
+                  <span class="dates">Mar 2013 – Sep 2014</span>
+                </div>
+
+                <div class="project minor">
+                  <p class="project-name">Clients: Sky Brasil · Charter Communications (US) <span class="dates-inline">Mar 2012 – May 2015</span></p>
+                  <ul>
+                    <li>Sky Brasil (Mar 2012 – May 2015): Oracle BRM opcodes in C/C++, Oracle SQL, Oracle BI and shell on Unix/Linux.</li>
+                    <li>Charter (Jun 2013 – Mar 2014): Oracle BRM L2 / L3 support, change requests, incident / problem management.</li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="role-item">
+                <div class="role-head">
+                  <h4>Associate Software Engineer</h4>
+                  <span class="dates">Nov 2011 – Mar 2013</span>
+                </div>
+                <ul>
+                  <li>Oracle BRM developer and tester, Oracle BI Publisher developer and member of the Java practice.</li>
+                </ul>
+              </li>
+            </ol>
+          </div>
+
+          <div class="company company-small">
+            <div class="company-head">
+              <h3>Lawson Software (now Infor)</h3>
+              <span class="mono muted">Jul 2010 – Sep 2010 · Internship</span>
+            </div>
+            <ol class="roles">
+              <li class="role-item">
+                <div class="role-head">
+                  <h4>Software Test Intern</h4>
+                  <span class="dates">Jul 2010 – Sep 2010</span>
+                </div>
+                <ul>
+                  <li>Tested Lawson Retail Enterprise Solution, a Java web and desktop suite for multi-branch retailers.</li>
+                  <li>Covered end-to-end flows from branch shelf stock up to headquarters: orders, deliveries, tracking and reports.</li>
+                </ul>
+              </li>
+            </ol>
+          </div>
+        </section>
+
       </div>
-    </section>
 
-    <section>
-      <h2>Experience</h2>
-      <div class="timeline">
-        <article class="timeline-item">
-          <h3>Accenture - Java Spring Framework Developer (UBS, Digital Sales Platform)</h3>
-          <p class="meta">Jan 2020 - Feb 2026</p>
-          <ul>
-            <li>Developed Client Book features used by bank client advisors.</li>
-            <li>Built Flag Manager UI and REST APIs, including third-party integrations.</li>
-            <li>Designed near-time and real-time Kafka data streams.</li>
-            <li>Supported migration from on-prem infrastructure to Azure Cloud.</li>
-            <li>Contributed to Java upgrade work from 1.8 to 1.11 and ETL to Azure Data Lake.</li>
-            <li>Implemented test automation using JUnit and Cucumber.</li>
-          </ul>
-        </article>
-        <article class="timeline-item">
-          <h3>Accenture - Backend Developer (Sandugo, Corporate Citizenship Project)</h3>
-          <p class="meta">Oct 2019 - Dec 2019</p>
-          <ul>
-            <li>Delivered Spring Boot REST APIs for a mobile application.</li>
-            <li>Set up Firebase Auth and Firestore integration on Google Cloud.</li>
-            <li>Managed the Google Cloud account ownership for the solution.</li>
-          </ul>
-        </article>
-        <article class="timeline-item">
-          <h3>Accenture - Java Spring Developer (E-HealthWorker)</h3>
-          <p class="meta">Jun 2019 - Dec 2019</p>
-          <ul>
-            <li>Built Spring MVC dashboard and backend APIs for health worker analytics.</li>
-            <li>Set up Firebase platform services and WSO2 OAuth2 integration.</li>
-          </ul>
-        </article>
-        <article class="timeline-item">
-          <h3>Accenture - CPaaS Developer (Electric Ireland)</h3>
-          <p class="meta">Jun 2017 - Dec 2019</p>
-          <ul>
-            <li>Delivered full-stack features across PHP frontend, JBOSS Fuse backend, and WSO2 auth.</li>
-            <li>Administered AWS services including EC2, S3, RDS, DynamoDB, Lambda, and IoT.</li>
-            <li>Handled L3 support and created an analysis tool for support teams.</li>
-          </ul>
-        </article>
-        <article class="timeline-item">
-          <h3>Accenture - Frontend Developer (Fiat Group)</h3>
-          <p class="meta">Feb 2017 - Mar 2017</p>
-          <ul>
-            <li>Built JSP and JavaScript frontend features for a Spring MVC web application.</li>
-          </ul>
-        </article>
-      </div>
-    </section>
+      <aside class="side-col">
+        <section id="s-skills" aria-labelledby="h-skills">
+          <h2 id="h-skills">Skills</h2>
+          <div class="skill-group core">
+            <h3>Core</h3>
+            <ul class="chips"><li class="chip chip-accent">Java 8–21</li><li class="chip chip-accent">Spring Boot</li><li class="chip chip-accent">Microservices</li><li class="chip chip-accent">Kafka</li><li class="chip chip-accent">Azure</li></ul>
+          </div>
+          <p class="more-skills">More skills</p>
+          <div class="skill-group">
+            <h3>AI</h3>
+            <ul class="chips"><li class="chip">Spring AI</li><li class="chip">Model Context Protocol</li><li class="chip">GenAI tooling</li><li class="chip">GitHub Copilot</li><li class="chip">Azure ML</li><li class="chip">AWS Rekognition</li></ul>
+          </div>
+          <div class="skill-group">
+            <h3>Backend</h3>
+            <ul class="chips"><li class="chip">Python</li><li class="chip">Spring MVC</li><li class="chip">Java EE</li><li class="chip">REST &amp; SOAP</li><li class="chip">Node.js</li><li class="chip">PHP</li><li class="chip">JBoss Fuse</li><li class="chip">Apache Camel</li><li class="chip">WSO2</li><li class="chip">SMS / voice APIs</li><li class="chip">C/C++</li></ul>
+          </div>
+          <div class="skill-group">
+            <h3>Data &amp; streaming</h3>
+            <ul class="chips"><li class="chip">ETL</li><li class="chip">Azure Databricks</li><li class="chip">Azure Data Lake</li><li class="chip">Oracle (incl. BRM)</li><li class="chip">PostgreSQL</li><li class="chip">MySQL</li><li class="chip">Firestore</li></ul>
+          </div>
+          <div class="skill-group">
+            <h3>Cloud</h3>
+            <ul class="chips"><li class="chip">Azure Functions</li><li class="chip">Managed Identities</li><li class="chip">AWS</li><li class="chip">GCP</li><li class="chip">Firebase</li><li class="chip">Linux / Unix</li></ul>
+          </div>
+          <div class="skill-group">
+            <h3>Delivery</h3>
+            <ul class="chips"><li class="chip">CI/CD pipelines</li><li class="chip">GitLab CI</li><li class="chip">Jenkins</li><li class="chip">Maven</li><li class="chip">JUnit</li><li class="chip">Cucumber</li><li class="chip">Integration testing</li><li class="chip">JMeter</li><li class="chip">Splunk</li><li class="chip">Jira</li><li class="chip">Shell scripting</li><li class="chip">Agile Scrum</li></ul>
+          </div>
+        </section>
 
-    <section>
-      <h2>Industry and Leadership</h2>
-      <div class="grid-cards">
-        <article class="info-card">
-          <h3>Industry Exposure</h3>
-          <p>Communications and Media Technology, Digital, Industry X.0, Financial Services.</p>
-        </article>
-        <article class="info-card">
-          <h3>Leadership</h3>
-          <p>Project management, cloud administration and support, software documentation, Scrum Master.</p>
-        </article>
-        <article class="info-card">
-          <h3>Languages</h3>
-          <p>English, Filipino.</p>
-        </article>
-      </div>
-    </section>
+        <section id="s-certifications" aria-labelledby="h-certs">
+          <h2 id="h-certs">Certifications</h2>
+          <ul class="side-list">
+            <li><strong>Azure Fundamentals (AZ-900)</strong><span class="muted">Microsoft · 2022</span></li>
+          </ul>
+        </section>
 
-    <section>
-      <h2>Education</h2>
-      <article class="info-card">
-        <h3>Mapua Institute of Technology</h3>
-        <p>Bachelor's Degree in Computer Science (Solaris OS and Java)</p>
-      </article>
-    </section>
+        <section id="s-education" aria-labelledby="h-edu">
+          <h2 id="h-edu">Education</h2>
+          <ul class="side-list">
+            <li>
+              <strong>B.S. Computer Science</strong>
+              <span class="muted">Mapúa Institute of Technology</span>
+              <span class="note">Thesis (2010): pop-music piano-accompaniment generator using pitch tracking and Hidden Markov Models.</span>
+            </li>
+          </ul>
+        </section>
 
-    <footer>
-      <p class="meta">Last updated: May 2026</p>
+        <section id="s-additional" aria-labelledby="h-more">
+          <h2 id="h-more">Additional Information</h2>
+          <ul class="side-list">
+            <li class="print-hide"><strong>Industries</strong><span class="muted">Financial services, communications &amp; media, energy, Industry X.0</span></li>
+            <li class="print-hide"><strong>Leadership</strong><span class="muted">Team lead (Accenture level), cloud administration, project delivery</span></li>
+            <li><strong>Working hours</strong><span class="muted">Experienced working CET business hours remotely for European clients</span></li>
+            <li><strong>Languages</strong><span class="muted">English (full professional proficiency), Filipino (native)</span></li>
+            <li class="print-hide"><strong>Availability</strong><span class="muted">Philippine citizen · work visa needed (employer-sponsored or skilled migration) · 30-day notice period</span></li>
+          </ul>
+        </section>
+
+        <section id="s-patents" aria-labelledby="h-patents">
+          <h2 id="h-patents"><span class="num">03</span>Patent Applications</h2>
+          <div class="card-list single">
+            <a class="card card-link" href="https://patents.google.com/patent/US20190027018A1/en">
+              <span class="card-kicker mono">US 2019/0027018 A1 · PH 12018000201 A1</span>
+              <span class="card-title">Artificial Intelligence Based Service Control and Home Monitoring</span>
+              <span class="card-body">Turns monitoring alerts into automatic phone, SMS, email and smart-device calls to support staff, opens and updates incident tickets, and measures resolution against SLAs. Published patent applications in the US and the Philippines; co-inventor. Based on the monitoring app built during the Coop Voce engagement.</span>
+            </a>
+          </div>
+        </section>
+
+        <section id="s-awards" aria-labelledby="h-awards">
+          <h2 id="h-awards"><span class="num">04</span>Honors &amp; Awards</h2>
+          <ul class="awards">
+            <li><span class="year">2019</span><span><strong>Inventor of the Year</strong> — Accenture Advanced Technology Centers Philippines</span></li>
+            <li><span class="year">2019</span><span><strong>Finalist, Ideas2Outcome</strong> (Accenture Philippines innovation competition) — AI security system using any camera and AWS Rekognition to detect emergencies in real time</span></li>
+            <li class="print-hide"><span class="year">2019</span><span><strong>2nd Runner-Up, Digital &amp; Data Hackathon</strong></span></li>
+            <li><span class="year">2018</span><span><strong>FY18 Inventor Award</strong> — for the AI service control &amp; home monitoring patent application</span></li>
+            <li><span class="year">2018</span><span><strong>2nd Runner-Up, Ideas2Outcome</strong> — AI that runs recruitment interviews with real-time analytics</span></li>
+            <li><span class="year">2017</span><span><strong>Champion, Ideas2Outcome</strong> — AI that monitors servers and calls support staff by SMS, voice and email</span></li>
+            <li class="print-hide"><span class="year">2017</span><span><strong>Value Creator &amp; High-Performing Team awards</strong> — Accenture Philippines (Gantimpala), incl. Q2 quarterly</span></li>
+            <li class="print-hide"><span class="year">2016</span><span><strong>Champion, Digital Innovation Challenge</strong> — Accenture PDC</span></li>
+          </ul>
+        </section>
+      </aside>
+    </div>
+
+    <footer class="footer">
+      <span class="mono muted">Updated November 2026</span>
+      <a href="#content" class="mono">Back to top ↑</a>
     </footer>
   </main>
+
+  <script>
+    (function () {
+      var root = document.documentElement;
+      var toggle = document.getElementById('theme-toggle');
+      function isDark() {
+        return (root.getAttribute('data-theme') ||
+          (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')) === 'dark';
+      }
+      toggle.setAttribute('aria-pressed', String(isDark()));
+      toggle.addEventListener('click', function () {
+        var current = root.getAttribute('data-theme') ||
+          (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        var next = current === 'dark' ? 'light' : 'dark';
+        root.classList.add('theme-switching');
+        root.setAttribute('data-theme', next);
+        requestAnimationFrame(function () { requestAnimationFrame(function () { root.classList.remove('theme-switching'); }); });
+        toggle.setAttribute('aria-pressed', String(next === 'dark'));
+        try { localStorage.setItem('theme', next); } catch (e) {}
+      });
+      document.getElementById('print-btn').addEventListener('click', function () { window.print(); });
+    })();
+  </script>
 </body>
 </html>
-
